@@ -35,7 +35,7 @@
   @media (max-width: 600px) {
   .texto-carta {
   font-family: 'Gwendolyn', cursive;
-  font-size: 1.5rem; /* Ajuste de tamanho */
+  font-size: 1.8rem; /* Ajuste de tamanho */
   line-height: 1.0;  /* Espaçamento confortável */
   color: #ffe952;       /* Cor do texto */
   }
@@ -243,9 +243,10 @@
 
   .destacado {
     font-family: 'Amatic SC', cursive;
-    font-size: 3.0rem; /* Ajuste de tamanho */
+    font-size: 2.5rem; /* Ajuste de tamanho */
     font-weight: bold; /* Deixa mais marcante */
     color: #ffffff; /* Cor de destaque, pode trocar */
+    text-align: center;
 }
   }
 
