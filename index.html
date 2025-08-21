@@ -1,0 +1,123 @@
+<!-- ==========================
+     ARQUIVO: index.html
+     Função: Estrutura do site
+     ========================== -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta Mágica Kismeya</title>
+
+  <!-- Estilo visual -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Importa a fonte Gwendolyn -->
+  <link href="https://fonts.googleapis.com/css2?family=Gwendolyn&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Firebase e funcionalidade JS -->
+  <script type="module" src="firebase-config.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <!-- Cabeçalho com logotipo -->
+  <header>
+    <img src="KISMEYA.png" alt="Logo Kismeya" class="logo">
+  </header>
+
+  <!-- Seção explicativa -->
+  <div class="texto-carta-container">
+  <p class="texto-carta">
+Para começar, quero te explicar o que é a <span class="destacado">Lei da Atração</span>. Ela é a arte de alinhar a sua mente, o seu coração e a sua energia para criar a vida que você deseja. Parte de um princípio simples, mas profundo: aquilo em que você foca, expande.<br>
+<br>
+Quando você cultiva pensamentos positivos, sentimentos de gratidão e mantém uma visão clara do que deseja, o Universo responde, trazendo para perto de você situações, pessoas e oportunidades que vibram na mesma frequência.<br>
+<br>
+Não é magia no sentido comum… é um encontro perfeito entre intenção e ação.<br>
+É como plantar uma semente com amor e cuidar dela com paciência, sabendo que, no momento certo, ela vai florescer.<br>
+<br>
+E é aqui que a Carta Mágica Kismeya entra: ela é o seu ato consciente de plantar essa semente, o seu espaço sagrado para manifestar.
+Cada palavra que você escreve é um pedido ao Universo, um traço de energia que começa a moldar a realidade ao seu redor.<br>
+O momento que você dedica a essa carta é o instante em que você assume o comando da sua própria jornada.<br>
+<br>
+Existe um momento na vida em que sentimos, lá no fundo, que é hora de conversar com o Universo.
+Não apenas pedir… mas abrir o coração, derramar palavras que carregam a nossa essência e a nossa verdade mais íntima.<br>
+<br>
+Escrever essa carta é um ritual delicado, guiado por amor e intuição, onde cada letra se transforma em energia viva, navegando silenciosa pelos caminhos invisíveis até o destino que você escolheu.<br>
+
+Escrever para o Universo é mais do que registrar palavras — é registrar energia.<br>
+Quando você descreve seus sonhos como se já fossem realidade, algo muda dentro de você. É como acender uma luz interna, capaz de guiar suas escolhas e abrir caminhos.<br>
+
+Essa carta será guardada com todo cuidado e carinho e, no momento certo, ela voltará para você como um lembrete mágico do poder que existe dentro de si.<br>
+E, nesse reencontro, você verá com seus próprios olhos o quanto sua vida mudou.<br>
+Será um momento de reflexão, gratidão e, muitas vezes, de surpresa.<br>
+Porque aquilo que hoje parece distante pode estar muito mais perto do que imagina.<br>
+
+Palavras que, no momento em que foram escritas, vibravam com desejo, esperança e fé…<br>
+Ao relê-las no futuro, você verá não apenas o que pediu, mas o quanto cresceu e o quanto a vida se moveu para te levar até lá.<br>
+
+A Carta Mágica não é só um texto.<br>
+Ela é um espelho da sua alma, uma conversa íntima com o Universo, um abraço no seu “eu” do futuro.<br>
+
+Hoje, você planta a semente.
+Amanhã, você colhe os frutos.<br>
+<br>
+</p>
+
+<h3>✨ Como criar o seu momento mágico ✨</h3>
+
+<p>
+Se puder, transforme o ato de escrever em um pequeno ritual:<br>
+
+💡 Luz suave – abaixe a intensidade, permitindo que o ambiente te envolva.<br>
+
+🕯️ Vela acesa – como símbolo da luz que guiará o seu caminho.<br>
+
+🎶 Música relaxante - ouça uma música que te acalme.<br>
+
+🥢Aroma especial – um incenso, óleo essencial ou fragrância que acalme sua mente.<br>
+<br>
+Pegue uma xícara de chá, respire fundo, feche os olhos por um instante… e deixe seu coração falar.<br>
+Escreva sua carta com calma, sentindo cada frase como se já estivesse vivendo aquilo que deseja.<br>
+As palavras já estão dentro de você — basta colocá-las no papel e confiar que a magia fará o resto.<br>
+
+Mas, se não puder criar todo esse cenário, não há problema.
+O mais importante é que sua intenção seja genuína.<br>
+O Universo vai ouvir sua mensagem, esteja você num momento de silêncio profundo ou escrevendo no intervalo de um dia corrido.<br>
+<br>
+Escreva… e deixe que o Universo leve sua mensagem até o momento perfeito.
+E, nesse intervalo, a vida se encarregará de fazer sua parte.</p>
+</div>
+
+  <!-- Formulário de envio -->
+  <section class="formulario">
+    <form id="cartaForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" required />
+
+      <label for="prazo">Desejo receber minha carta de volta em:</label>
+      <select id="prazo" required>
+        <option value="6meses">6 meses</option>
+        <option value="1ano">1 ano</option>
+      </select>
+
+      <label for="mensagem">Escreva sua carta:</label>
+      <textarea id="mensagem" rows="8" required></textarea>
+
+      <label>
+        <input type="checkbox" id="termos" required />
+        Li e aceito a <a href="#politica">Política de Privacidade</a>
+      </label>
+
+      <button type="submit">Enviar e pagar R$ 4,90</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Carta Mágica Kismeya</p>
+  </footer>
+</html>
