@@ -33,6 +33,15 @@
   }
 
   @media (max-width: 600px) {
+  .texto-carta {
+  font-family: 'Gwendolyn', cursive;
+  font-size: 1.5rem; /* Ajuste de tamanho */
+  line-height: 1.0;  /* Espaçamento confortável */
+  color: #ffe952;       /* Cor do texto */
+  }
+}
+
+  @media (max-width: 600px) {
   img.logo {
     margin: -50px auto -20px auto; /* Menos espaço no celular */
     max-width: 300px; /* Ajuste para telas pequenas */
@@ -213,7 +222,7 @@
     height: auto;
   }
 
-  /* Texto principal (mantendo sua paleta) */
+  /* Texto principal */
   .descricao h2 {
     font-family: 'Gwendolyn', cursive;
     font-size: clamp(28px, 7vw, 40px);
